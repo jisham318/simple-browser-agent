@@ -1,0 +1,29 @@
+{
+	"name": "@simple-browser-agent/example-usage",
+	"version": "1.0.0",
+	"author": "Jacob Isham",
+	"description": "A simple LLM-powered browser agent.",
+	"license": "MIT",
+	"repository": "https://github.com/jisham318/simple-browser-agent",
+	"type": "module",
+	"main": "./dist/index.js",
+	"scripts": {
+		"start": "node .",
+		"build": "tsc --build --verbose",
+		"clean": "rm -rf ./dist",
+		"lint": "eslint ./src --config ../../eslint.config.mjs",
+		"lint:fix": "eslint ./src --config ../../eslint.config.mjs --fix"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.18.0",
+		"@types/node": "^22.10.7",
+		"eslint": "^9.18.0",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"typescript": "^5.7.3",
+		"typescript-eslint": "^8.20.0"
+	},
+	"dependencies": {
+		"@simple-browser-agent/core": "workspace:*",
+		"puppeteer": "^24.1.0"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"name": "simple-browser-agent",
+	"private": true,
+	"version": "1.0.0",
+	"author": "Jacob Isham",
+	"license": "MIT",
+	"repository": "https://github.com/jisham318/simple-browser-agent",
+	"description": "A simple LLM-powered browser agent.",
+	"packageManager": "pnpm@9.3.0",
+	"engines": {
+		"pnpm": ">=9.3.0",
+		"node": ">=18.19.0"
+	},
+	"scripts": {
+		"start": "nx start @simple-browser-agent/example-usage",
+		"start:dev": "npm run build && npm run start",
+		"build": "nx run-many -t=build --verbose",
+		"clean": "nx run-many -t=clean --verbose",
+		"lint": "nx run-many -t=lint --verbose",
+		"lint:fix": "nx run-many -t=lint:fix --verbose",
+		"test": "nx test @simple-browser-agent/core"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.18.0",
+		"eslint": "^9.18.0",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"nx": "20.3.2",
+		"typescript": "^5.7.3",
+		"typescript-eslint": "^8.20.0"
+	}
+}

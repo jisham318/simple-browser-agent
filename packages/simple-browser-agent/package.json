@@ -1,0 +1,30 @@
+{
+	"name": "@simple-browser-agent/core",
+	"version": "1.0.0",
+	"author": "Jacob Isham",
+	"description": "A simple LLM-powered browser agent.",
+	"license": "MIT",
+	"repository": "https://github.com/jisham318/simple-browser-agent",
+	"type": "module",
+	"main": "./dist/index.js",
+	"scripts": {
+		"build": "tsc --build --verbose",
+		"clean": "rm -rf ./dist",
+		"lint": "eslint ./src --config ../../eslint.config.mjs",
+		"lint:fix": "eslint ./src --config ../../eslint.config.mjs --fix",
+		"test": "echo TODO: Implement tests"
+	},
+	"devDependencies": {
+		"@types/jsdom": "^21.1.7",
+		"@types/node": "^22.10.7",
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"jsdom": "^26.0.0",
+		"openai": "^4.78.1",
+		"prettier": "^3.4.2",
+		"puppeteer": "^24.1.0",
+		"reflect-metadata": "^0.2.2",
+		"uuid": "^11.0.5"
+	}
+}

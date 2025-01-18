@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./src/",
+		"rootDir": "./src/",
+		"outDir": "./dist",
+
+		"module": "ES6",
+		"target": "ES6",
+		"moduleResolution": "node10",
+
+		"strict": true,
+		//"composite": true,
+		"declaration": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		//"skipLibCheck": true,
+
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"types": ["reflect-metadata"]
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "**/*.spec.ts"]
+}
